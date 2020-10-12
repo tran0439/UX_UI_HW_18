@@ -1,0 +1,109 @@
+
+html, body { 
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.logo {
+  width: 1%;
+  padding: 1%;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img { vertical-align: middle;}
+
+.heroimg {
+  height: 600px;
+  padding: 60px 0;
+}
+
+.content {
+ /* width: 500px; */
+  padding: 20px;
+  /* margin: 0 auto;
+  text-align: center; */
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  vertical-align: middle;
+}
+
+nav li {
+  padding: 20px;
+  color: #ffffff;
+
+}
+
+footer li {
+  padding: 20px;
+  color: #ffffff;
+}
+
+ul {
+  width: 100%;
+  margin-left: auto;
+}
+
+header {
+  background-color: #373738;
+  width: 100%;
+  height: auto;
+}
+
+.custom-block {
+  border: 1px solid blue;
+  margin: 20px 0;
+}
+
+.center-this-guy {
+  text-align: center;
+}
+footer {
+  background-color: #373738;
+  width: 100%;
+}
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  
+}
+
+.wrapper { 
+  border : 2px solid #000; 
+  overflow:hidden;
+}
+
+.wrapper div {
+   min-height: 100px;
+   padding: 10px;
+}
+#one {
+  width: 50%;
+  background-color: gray;
+  float:left; 
+  margin-right:50px;
+  width:auto;
+  border-right:2px solid #000;
+}
+#two { 
+  background-color:white;
+  overflow:hidden;
+  margin:100px;
+  border:50px #ccc;
+  min-height:200px;
+}
