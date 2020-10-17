@@ -15,7 +15,7 @@ html, body {
 }
 
 div.logo {
-  width: 1%;
+  width: 10%;
   padding: 1%;
 }
 
@@ -66,7 +66,7 @@ ul {
 }
 
 header {
-  background-color: #373738;
+  background-color: #74747b;
   width: 100%;
   height: auto;
 }
@@ -80,7 +80,7 @@ header {
   text-align: center;
 }
 footer {
-  background-color: #373738;
+  background-color: #74747b;
   width: 100%;
 }
 footer ul {
@@ -126,8 +126,8 @@ footer ul {
 
 .flexContainer > div {
   margin: 40px;
-  padding: 40px;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -160,14 +160,25 @@ footer ul {
 }
 
 .workGrid { 
-  padding: 20px; 
+  padding: 40px; 
   text-align: center;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 button {
   padding: 10px;
   border-radius: 3px;
 }
+
+.grid-container {
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
   h1 {
@@ -193,7 +204,7 @@ button {
   #two {
     overflow:unset;
     height: 510px;
-    margin: 100px;
+    margin: 98px;
 
   }
 
@@ -207,6 +218,10 @@ button {
     padding:0px;
   }
   .flex-container {
+    display: revert;
+  }
+
+  .grid-container {
     display: revert;
   }
 
@@ -249,8 +264,21 @@ button {
   .flexContainer > div {
     margin: 40px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
+  }
+
+  .grid-container {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+  }
+
+  .grid-item {
+    width: 175px;
   }
 }
   /*Your CSS styles for your grid template are here */
