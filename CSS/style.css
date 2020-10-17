@@ -5,11 +5,13 @@ html, body {
   height: 100%;
   padding: 0;
   overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .inline-block {
   display: inline-block;
   vertical-align: top;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 div.logo {
@@ -37,6 +39,10 @@ div.logo {
 
 nav {
   float: right;
+    @media screen (max-width:600px){
+    display:block;
+    font-size:5px;
+  }
 }
 
 nav ul {
@@ -84,8 +90,8 @@ footer ul {
 }
 
 .wrapper { 
-  border : 2px solid #000; 
   overflow:hidden;
+  background-image: url(https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
 }
 
 .wrapper div {
@@ -93,17 +99,159 @@ footer ul {
    padding: 10px;
 }
 #one {
-  width: 50%;
-  background-color: gray;
+  width: 100%;
   float:left; 
-  margin-right:50px;
+  margin-right:0px;
   width:auto;
-  border-right:2px solid #000;
+  padding-left: 300px;
+  padding-top: ;
 }
 #two { 
-  background-color:white;
   overflow:hidden;
-  margin:100px;
-  border:50px #ccc;
-  min-height:200px;
+  max-width: 700px;
+  height: 430px;
+  margin:60px;
+  border:100px #ccc;
+  min-width: height 100%;
+  color: white;
+}/* Grid and flex Containters*/
+
+.flexContainer {
+  display: flex;
+  background-color: lightslategrey;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
+
+.flexContainer > div {
+  margin: 40px;
+  padding: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mySkills {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  /*width: 100%; */
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+
+}
+
+.workGrid { 
+  padding: 20px; 
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  nav {
+    padding-right: 100px;
+  }
+
+  .wrapper {
+    width: 600px;
+  }
+
+  .heroimg {
+    align-items: center;
+  }
+
+  #one {
+    padding-right: 100px ;
+  }
+
+  #two {
+    overflow:unset;
+    height: 510px;
+    margin: 100px;
+
+  }
+
+  .flexContainer {
+    display: revert;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .flexcontainer > div {
+    padding:0px;
+  }
+  .flex-container {
+    display: revert;
+  }
+
+  .workGrid {
+    flex-direction: row;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .mySkills {
+    width: 600px;
+  }
+
+  .myWork {
+    margin: auto;
+    width: fit-content;
+  }
+
+  button {
+    width: 200px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .column {
+    margin-bottom: 0px;
+    align-items: center;
+  }
+
+  h4 {
+    padding-bottom: 0px;
+  }
+
+  #one {
+    align-items: center;
+    padding-left: 140px;
+  }
+
+  .flexContainer > div {
+    margin: 40px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+  /*Your CSS styles for your grid template are here */
+  
