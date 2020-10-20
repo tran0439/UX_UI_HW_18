@@ -27,7 +27,7 @@ div.logo {
 
 .heroimg {
   height: 600px;
-  padding: 60px 0;
+  padding: 60px;
 }
 
 .content {
@@ -90,7 +90,6 @@ footer ul {
 }
 
 .wrapper { 
-  overflow:hidden;
   background-image: url(https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80);
 }
 
